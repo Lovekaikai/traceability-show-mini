@@ -1,0 +1,160 @@
+page{
+	font-size: 28upx;
+	color: #333;
+}
+
+/* 导航 */
+.nav {
+	width: 750upx;
+	height: 98upx;
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.active {
+	color: #E92C33;
+	position: relative;
+}
+
+.active::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -2upx;
+	left: 0;
+	right: 0;
+	height: 2rpx;
+	background: #E92C33;
+}
+
+/* 日期选择 */
+.select-con {
+		position: fixed;
+		top: 100upx;
+		left: 0;
+		width: 650upx;
+		padding: 0 50upx 30upx;
+		background: #FFFFFF;
+		z-index: 50;
+}
+.selectDate {
+	padding: 16upx 18upx;
+	margin: 40upx auto 0;
+	box-shadow: 0px 0px 6px 0px rgba(204, 204, 204, 1);
+	border-radius: 8upx;
+}
+
+.selectDate .text {
+	color: #E92C33;
+}
+
+.selectDate .text image {
+	width: 48upx;
+	height: 48upx;
+	margin: 0 24upx;
+}
+
+.selectDate .date {
+	color: #808080;
+}
+
+.selectDate .date image {
+	width: 28upx;
+	height: 28upx;
+	margin-left: 20upx;
+}
+
+/* 记录列表 */
+.result-con {
+	position: absolute;
+	top: 198upx;
+	width: 100%;
+}
+.recordBox {
+	width: 646upx;
+	margin: 40upx auto 0;
+	border-radius: 8upx;
+	box-shadow: 0px 0px 12px 0px rgba(204, 204, 204, 1);
+}
+
+.recordBox .top {
+	padding: 23upx 20upx;
+	font-size: 26upx;
+	color: #fff;
+	background: #E92C33;
+	border-top-left-radius: 8upx;
+	border-top-right-radius: 8upx;
+}
+
+.recordBox .top image {
+	width: 42upx;
+	height: 40upx;
+	margin-right: 10upx;
+}
+/* 商品入库记录 */
+.recordBox .content {
+	padding: 48upx 24upx 30upx;
+	margin-left: 76upx;
+	font-size: 24upx;
+}
+
+.recordBox .content .kind {
+	margin-top: 40upx;
+}
+
+.recordBox .content .kind:first-of-type {
+	margin-top: 0;
+}
+
+.recordBox .content .kindConent {
+	color: #808080;
+}
+
+.recordBox .content .time {
+	margin-top: 50upx;
+	color: #E92C33;
+	font-size: 20upx;
+}
+
+.bottom {
+	color: #E92C33;
+	border-bottom: 1px solid #E92C33;
+}
+
+/* 货物入库记录 */
+.recordBox .cargo{
+	padding: 40upx 20upx;
+	width:606upx;
+	font-size: 20upx;
+}
+
+.recordBox .cargo image{
+	width: 220upx;
+	height:220upx;
+	display: block;
+	border-radius: 8upx;
+	background: gray;
+}
+.recordBox .cargo .txt{
+	margin-left:40upx;
+	flex: 1;
+}
+.recordBox .cargo span{
+	color:#808080;
+}
+.cargo .txt view{
+	margin-top:10upx;
+}
+.cargo .txt view:first-of-type{
+	margin-top:0;
+}
+.recordBox .cargo .time{
+	color: #E92C33;
+}
+.recordBox:last-child {
+	margin-bottom: 40upx;
+}
